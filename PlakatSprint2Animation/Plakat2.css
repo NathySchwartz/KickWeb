@@ -120,6 +120,9 @@ body {
   font-family: "Libre Franklin", sans-serif;
   color: white;
   background-color: darkolivegreen;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
   transform: rotate(360deg);
-  width: 11.1cm;
+  width: 4cm;
 }
