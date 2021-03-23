@@ -12,7 +12,7 @@ body {
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
   animation-name: background1;
-  animation-duration: 20s;
+  animation-duration: 8s;
   animation-iteration-count: 10;
   animation-delay: 2s;
 }
@@ -44,19 +44,23 @@ body {
   letter-spacing: calc(1.2 * -10px);
   transition-timing-function: ease-in-out;
   animation-name: title1;
-  animation-duration: 20s;
-  animation-iteration-count: 10;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
 }
 
 @keyframes title1 {
   0% {
-    color: #312222;
+    color: #633c36;
+    transform: scale(0);
   }
   75% {
-    color: white;
+    color: #b72e2c;
   }
   100% {
     color: #312222;
+    scale: 5%;
+    transform: translate(0px, 10px);
+    transform: scale(1);
   }
 }
 
@@ -68,61 +72,75 @@ body {
   letter-spacing: calc(1.2 * -10px);
   transition-timing-function: ease-in-out;
   animation-name: title2;
-  animation-duration: 20s;
-  animation-iteration-count: 10;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
 }
 
 @keyframes title2 {
   0% {
-    color: #312222;
+    color: #633c36;
+    transform: scale(0);
   }
   75% {
-    color: white;
+    color: #b72e2c;
   }
   100% {
     color: #312222;
+    scale: 5%;
+    transform: translate(0px, 10px);
+    transform: scale(1);
   }
 }
 .redbox {
   font-family: "Libre Franklin", sans-serif;
   font-size: calc(1.2 * 20px);
   color: #312222;
-  width: calc(1.2 * 11.1cm);
+  width: 9.87cm;
   background-color: #b72e2c;
-  padding-left: 0.2cm;
+  padding-left: 6cm;
   padding-top: 250px;
-  margin: 0.5cm;
+  margin: 0;
   transition-property: all;
   transition-timing-function: ease-in-out;
   animation-name: redbox1;
-  animation-duration: 10s;
-  animation-iteration-count: 10;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
 }
 
 @keyframes redbox1 {
   0% {
-    background-color: #b72e2c;
+    margin-left: 0.2cm;
+    padding-left: 0cm;
+    width: 4cm;
   }
   25% {
-    background-color: #fd9800;
+    transform: rotate(360deg);
+
+    margin: 0cm;
   }
   50% {
-    background-color: #d7fd00ee;
+    padding-top: 250px;
   }
   75% {
-    background-color: #00ecfdee;
   }
   100% {
-    background-color: #b72e2c;
+    transform: scale (1.5, 2);
+    transform: rotate(360deg);
+    padding-top: 250px;
+    width: 9.87cm;
+    margin: 0cm;
+    padding-bottom: 0px;
+    padding-left: 6cm;
   }
 }
+
 .redbox:hover {
   font-family: "Libre Franklin", sans-serif;
-  color: white;
-  background-color: darkolivegreen;
-  transition-property: all;
+  color: #b72e2c;
+  background-color: #312222;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
   transform: rotate(360deg);
   width: 4cm;
+  padding-left: 0.2cm;
 }

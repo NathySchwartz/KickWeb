@@ -1,58 +1,42 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Statusveränderungen</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"
-      rel="stylesheet"
-    />
-
     <style>
-      body {
-        margin: 0px;
-        padding: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .box {
+      .flex-container {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+        flex-wrap: nowrap;
+        background-color: DodgerBlue;
       }
 
-      .box div {
-        width: 500px;
-        height: 500px;
-        background-color: darkorchid;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 120px;
-        /* die drei zeilen auskommentieren, dann ändert der State ohne Übergang*/
-        transition-property: all;
-        transition-duration: 2s;
-        transition-timing-function: linear;
-      }
-
-      .box div:hover {
-        background-color: lavender;
-        color: white;
-        /*transform: translate(100px, 200px);*/
-        z-index: 10;
-        margin-left: 100px;
-        margin-top: 200px;
-        transform: rotate(45deg);
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
       }
     </style>
   </head>
   <body>
-    <div class="box">
-      <div>
-        <div class="text">What am I?</div>
-      </div>
+    <h1>Flexible Boxes</h1>
+
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
     </div>
+
+    <p>Try to resize the browser window.</p>
+    <p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+    <p>
+      <strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or
+      earlier versions.
+    </p>
   </body>
 </html>
