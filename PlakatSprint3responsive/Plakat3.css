@@ -1,0 +1,145 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+/* Desktop */
+.Flexboxbackground {
+  background-color: #633c36;
+  width: 100%;
+  height: max-content;
+  padding-bottom: 25em;
+}
+.Flexboxtitle1 {
+  width: 100;
+  font-family: "Libre Franklin", sans-serif;
+  color: #312222;
+  text-align: center;
+  font-size: calc(0.6 * 9.8em);
+  letter-spacing: calc(1.2 * -5px);
+  flex-wrap: nowrap;
+}
+.Flexboxredboxtext1 {
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #b72e2c;
+  padding-top: 15em;
+}
+.Flexboxredboxtext2 {
+  width: 100%;
+  background-color: #b72e2c;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 15em;
+}
+.Flexboxredboxtext3 {
+  width: 100%;
+  background-color: #b72e2c;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 15em;
+}
+.Flexboxredbox {
+  background-color: #b72e2c;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: calc(1.2 * 20px);
+  text-align: center;
+  color: #312222;
+  height: max-content;
+  padding-bottom: 14em;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: flex;
+}
+
+/* Tablet */
+@media screen and (min-width: 992px) {
+  div.Flexboxbackground {
+    background-color: #633c36;
+    width: 100%;
+    padding-bottom: 7em;
+  }
+  div.Flexboxtitle1 {
+    width: 100;
+    font-family: "Libre Franklin", sans-serif;
+    color: #312222;
+    text-align: center;
+    font-size: calc(0.8 * 9.8em);
+    letter-spacing: calc(1.2 * -6px);
+    flex-wrap: nowrap;
+  }
+  div.Flexboxredboxtext1 {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #b72e2c;
+    padding-top: 4em;
+  }
+  div.Flexboxredboxtext2 {
+    width: 100%;
+    background-color: #b72e2c;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5em;
+  }
+  div.Flexboxredboxtext3 {
+    width: 100%;
+    background-color: #b72e2c;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 4em;
+  }
+  div.Flexboxredbox {
+    background-color: #b72e2c;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: calc(1.5 * 20px);
+    text-align: center;
+    color: #312222;
+    height: max-content;
+    padding-bottom: 4em;
+    justify-content: space-evenly;
+    width: 100%;
+    float: none;
+    display: table;
+  }
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 600px) {
+  div.Flexboxtitle1 {
+    width: 80;
+    text-align: center;
+    font-size: calc(1.2 * 7em);
+    letter-spacing: calc(1.2 * -7px);
+  }
+  div.Flexboxredbox {
+    font-size: calc(0.7 * 20px);
+    text-align: center;
+    height: max-content;
+    flex-direction: column;
+    padding-bottom: 8em;
+  }
+  div.Flexboxredboxtext1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 2em;
+    padding-top: 3em;
+  }
+  div.Flexboxredboxtext2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #b72e2c;
+    font-size: 2em;
+    padding-top: 2em;
+  }
+  div.Flexboxredboxtext3 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #b72e2c;
+    font-size: 2em;
+    padding-top: 2.5em;
+  }
+}
